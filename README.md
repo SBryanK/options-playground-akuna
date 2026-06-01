@@ -1,4 +1,4 @@
-# Option Greeks Visualizer
+# Option Greek Playground
 
 An interactive options pricing & risk-visualisation tool inspired by working through Akuna Capital's *Options 101* course. Built with Vite + TypeScript + Tailwind + Plotly.
 

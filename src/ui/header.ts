@@ -7,8 +7,7 @@ export function renderHeader(): string {
             <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8"/></svg>
           </span>
           <div class="leading-tight">
-            <div class="text-sm font-semibold">Option Greeks Visualizer</div>
-            <div class="text-[11px] text-slate-500 dark:text-slate-400">Black-Scholes pricing · Greeks · Portfolio P/L</div>
+            <div class="text-sm font-semibold">Option Greek Playground</div>
           </div>
         </div>
         <div class="flex items-center gap-2">
