@@ -80,6 +80,10 @@ export function mountApp(root: HTMLElement): void {
         <div data-tab="pnl" class="${state.tab === 'pnl' ? '' : 'hidden'}">${renderPnL(state.pnl)}</div>
         <div data-tab="portfolio" class="${state.tab === 'portfolio' ? '' : 'hidden'}">${renderPortfolio(state.portfolio)}</div>
       </section>
+
+      <footer class="mt-10 text-center text-xs text-slate-500 dark:text-slate-500">
+        Built with Vite + Tailwind + Plotly · Black-Scholes-Merton model · Educational use only — not investment advice.
+      </footer>
     </main>
   `;
 

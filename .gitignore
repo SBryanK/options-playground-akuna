@@ -23,9 +23,3 @@ pnpm-debug.log*
 
 # Vercel
 .vercel
-
-# Reference / scratch artefacts (not part of the app)
-chart.png
-mock-data.json
-trading-forex-icon-*.jpg
-*.har
