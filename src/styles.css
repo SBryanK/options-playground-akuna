@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  body {
+    font-feature-settings: 'cv11', 'ss01';
+  }
+  :root {
+    --grid: rgba(15, 23, 42, 0.08);
+  }
+  .dark {
+    --grid: rgba(226, 232, 240, 0.08);
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl shadow-soft;
+  }
+  .input {
+    @apply w-full rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900
+      px-3 py-2 text-sm text-slate-900 dark:text-slate-100
+      focus:border-brand-500 focus:ring-2 focus:ring-brand-500/30 focus:outline-none
+      placeholder:text-slate-400 dark:placeholder:text-slate-500 transition;
+  }
+  .label {
+    @apply block text-xs font-medium text-slate-500 dark:text-slate-400 mb-1 uppercase tracking-wide;
+  }
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg px-3.5 py-2 text-sm font-medium transition
+      border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900
+      hover:bg-slate-50 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-200
+      focus:outline-none focus:ring-2 focus:ring-brand-500/30;
+  }
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg px-3.5 py-2 text-sm font-medium transition
+      bg-brand-600 hover:bg-brand-700 text-white border border-transparent
+      focus:outline-none focus:ring-2 focus:ring-brand-500/40;
+  }
+  .tab {
+    @apply px-4 py-2 text-sm font-medium rounded-lg transition border border-transparent
+      text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100;
+  }
+  .tab-active {
+    @apply bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-100
+      border-slate-200 dark:border-slate-700 shadow-soft;
+  }
+  .badge {
+    @apply inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium
+      bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-200;
+  }
+  .stat {
+    @apply flex flex-col gap-0.5;
+  }
+  .stat-label {
+    @apply text-xs text-slate-500 dark:text-slate-400 uppercase tracking-wide;
+  }
+  .stat-value {
+    @apply text-base font-semibold tabular-nums text-slate-900 dark:text-slate-100;
+  }
+  .mono {
+    font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  }
+}

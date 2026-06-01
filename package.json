@@ -1,0 +1,24 @@
+{
+  "name": "options-visualizer",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Interactive Black-Scholes option pricing & Greeks visualizer with portfolio analytics.",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview --port 4173",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "plotly.js-dist-min": "^2.35.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.7",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.4",
+    "typescript": "^5.4.5",
+    "vite": "^5.2.11"
+  }
+}
